@@ -130,7 +130,7 @@ int main()
         {
             uint16_t crc = usMBCRC16(package, packageSize);
             packageSize = 0;
-            printf("Lo: %X  Hi: %X\n", crc & 0xFF, crc >> 8);
+            printf("Lo: %02X  Hi: %02X\n", crc & 0xFF, crc >> 8);
         }
     }
 
